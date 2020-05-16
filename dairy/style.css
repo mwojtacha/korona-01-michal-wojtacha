@@ -8,7 +8,7 @@
     100%{background: rgb(238, 186, 88);}
 }
 @font-face {   font-family: 'BalsamiqSans-Regular';   
-    src: url('Font/BalsamiqSans-Regular.ttf') format('truetype'); 
+    src: url('../Font/BalsamiqSans-Regular.ttf') format('truetype'); 
 }
 .cont{
     display: grid;
@@ -41,8 +41,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     border: solid 5px brown;
+}
+.tabelka, td, th{
+    border: solid 4px brown;
+    background: orange;
 }
 .footer{
     grid-area: d;
@@ -52,7 +55,10 @@
     align-items: center;
     border: solid 5px brown;
 }
-
+h1{
+    font-size: 50px;
+    color: yellow;
+}
 
 
 }
@@ -88,6 +94,7 @@
 }
 .kwadrat:hover .ty{
     display: block;
+    animation: animacja3 2s 1;
     color: black;
 }
 .kwadrat:hover{
