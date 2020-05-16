@@ -8,19 +8,19 @@
     100%{background: rgb(238, 186, 88);}
 }
 @font-face {   font-family: 'BalsamiqSans-Regular';   
-    src: url('../../Font/BalsamiqSans-Regular.ttf') format('truetype'); 
+    src: url('../Font/BalsamiqSans-Regular.ttf') format('truetype'); 
 }
 .cont{
     display: grid;
-    grid-template-columns: 0.65fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.25fr;
+    grid-template-columns:  13% 29% 29% 29%;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     "a a a a"
     "b c c c"
     "b c c c"
     "d d d d";
+    height: 100vh;
     width: 100%;
-    height: 100%;
 }
 .header{
     grid-area: a;
@@ -39,13 +39,10 @@
     grid-area: c;
     background: #2BA84A;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     border: solid 5px brown;
-}
-.tabelka, td, th{
-    border: solid 4px brown;
-    background: orange;
 }
 .footer{
     grid-area: d;
@@ -58,6 +55,11 @@
 h1{
     font-size: 50px;
     color: yellow;
+}
+.gal_img{
+    height: 250px;
+    border: solid 6px brown;
+    border-radius: 15%;
 }
 
 

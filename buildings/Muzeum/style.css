@@ -41,11 +41,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
     border: solid 5px brown;
-}
-.tabelka, td, th{
-    border: solid 4px brown;
-    background: orange;
 }
 .footer{
     grid-area: d;
@@ -58,6 +55,9 @@
 h1{
     font-size: 50px;
     color: yellow;
+}
+.obrazek_bud{
+    height: 500px;
 }
 
 

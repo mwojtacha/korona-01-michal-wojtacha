@@ -43,10 +43,6 @@
     align-items: center;
     border: solid 5px brown;
 }
-.tabelka, td, th{
-    border: solid 4px brown;
-    background: orange;
-}
 .footer{
     grid-area: d;
     background: #131200;
@@ -82,7 +78,7 @@ h1{
     position: absolute;
     width: 65px;
     height: 170px;
-    background: white;
+    background: rgb(238, 186, 88);
     left: 120px;
     flex-direction: column;
 }
