@@ -55,6 +55,19 @@ h1{
     font-size: 50px;
     color: yellow;
 }
+.kalk{
+    background: orange;
+    border: solid 6px brown;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+button{
+    font-size: 40px;
+    width: 150px;
+}
+
+
 
 
 }

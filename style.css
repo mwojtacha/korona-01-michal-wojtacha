@@ -3,6 +3,11 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes kolor{
+    0%{background: red;}
+    50%{background: white;}
+    100%{background: red;}
+}
 @keyframes menu_animacja{
     0%{background: orange;}
     100%{background: rgb(238, 186, 88);}

@@ -13,7 +13,7 @@
         <li class="kwadrat">
         <div class="ty">
           <a class="text2" href="../Katt/index.html">Katt</a> <br/>
-          <a class="text2">Antonio</a> <br/>
+          <a class="text2" href="../Antonio/index.html">Antonio</a> <br/>
           <a class="text2" href="../Sherb/index.html">Sherb</a> <br/>
           <a class="text2" href="../Chevre/index.html">Chevre</a> <br/>
           <a class="text2" href="../Apple/index.html">Apple</a> <br/>
@@ -38,9 +38,38 @@
     </ul>
     </div>
     <div class="main">
-      <h1>Antonio</h1>
-      <img src="vlg.png" class="obrazek_vlg">
-      <p>Antonio jest jedną z dwóch postaci o osobowości "Jock" na Zawarudo.</p>
+    <?php
+    $servername = "127.0.0.1";
+    $username = "root";
+    $password = "";
+    $dbname = "wojtacha";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    $result = $conn->query("SELECT * FROM mieszkancy");
+
+    echo("<table border='1'>");
+    echo("<tr>
+    <th>Numer</th>
+    <th>Imie</th>
+    <th>Gatunek</th>
+    <th>Osobowosc</th>
+    <th>Kolor</th>
+    <th>Data</th>
+    </tr>");
+    while( $wiersz = $result->fetch_assoc() ) {
+        echo("<tr>");
+        echo("<td>".$wiersz['Numer']."</td>".
+        "<td>".$wiersz['Imie']."</td>".
+        "<td>".$wiersz['Gatunek']."</td>".
+        "<td>".$wiersz['Osobowosc']."</td>".
+        "<td>".$wiersz['Kolor']."</td>".
+        "<td>".$wiersz['Data']."</td>"
+    );
+        echo("</tr>");
+    }
+    echo("</table>");
+    ?>
     </div>
     <div class="footer">
       <audio controls>
@@ -48,6 +77,5 @@
       </audio>
     </div>
   </div>
-
   </body>
 </html>
